@@ -3,7 +3,7 @@
 
 Name:             libev
 Version:          4.33
-Release:          5%{?dist}
+Release:          6%{?dist}
 Summary:          High-performance event loop/event model with lots of features
 
 License:          BSD or GPLv2+
@@ -92,6 +92,10 @@ install -p -m 0644 Changes ev.pod LICENSE README %{inst_srcdir}
 %{source_dir}
 
 %changelog
+* Tue Sep 17 2024 Mohan Boddu <mboddu@redhat.com> - 4.33-6
+- add -devel subpackage into CRB
+- Resolves: RHEL-38617
+
 * Mon Aug 09 2021 Mohan Boddu <mboddu@redhat.com> - 4.33-5
 - Rebuilt for IMA sigs, glibc 2.34, aarch64 flags
   Related: rhbz#1991688
