@@ -1,0 +1,12 @@
+diff -up ./ev_iouring.c.ori ./ev_iouring.c
+--- ./ev_iouring.c.ori	2020-03-08 16:55:17.000000000 +0100
++++ ./ev_iouring.c	2025-01-21 09:46:51.408343981 +0100
+@@ -313,7 +313,7 @@ iouring_tfd_cb (EV_P_ struct ev_io *w, i
+ 
+ /* called for full and partial cleanup */
+ ecb_cold
+-static int
++static void
+ iouring_internal_destroy (EV_P)
+ {
+   close (iouring_tfd);
