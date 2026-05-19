@@ -3,7 +3,7 @@
 
 Name:             libev
 Version:          4.33
-Release:          14%{?dist}
+Release:          15%{?dist}
 Summary:          High-performance event loop/event model with lots of features
 
 License:          BSD-2-Clause OR GPL-2.0-or-later
@@ -95,6 +95,10 @@ install -p -m 0644 Changes ev.pod LICENSE README %{inst_srcdir}
 %{source_dir}
 
 %changelog
+* Wed Dec 03 2025 Jan Rybar <jrybar@redhat.com> - 4.33-15
+- version bump for -source to CRB PRP
+- Resolves: RHEL-94337
+
 * Tue Jan 21 2025 Jan Rybar <jrybar@redhat.com> - 4.33-14
 - fixed OSH findings
 - Resolves: RHEL-44360
